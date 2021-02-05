@@ -1,0 +1,121 @@
+body{
+    text-align: center;
+    background-image: url(ArtBoardBackground.jpg);
+    background-size: cover;
+}
+#Circle{
+    display: none;
+}
+#Rect{
+    display: none;
+}
+#Line{
+    display: none;
+}
+nav{
+    position: absolute;
+    top: 100px;
+    left: 450px;
+    background-color: silver;
+    width: 150ox;
+}
+#Color{
+    width: 120px;
+    height: 550px;
+    position: absolute;
+    top: 100px;
+    left: 310px;
+    background-color: silver;
+    border-color: orange;
+    border-style: solid;
+}
+label{
+    font-size: large;
+    color: orangered;
+    position: relative;
+    font-size: 25px;
+}
+/* Css to draw the colored circle ship to select color */   
+#ColorCircle1 , #ColorCircle2{
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    background-size: 50% 50%;
+    background-repeat: no-repeat;
+    background-image: linear-gradient(150deg, transparent 63%, tomato 63%),  
+      linear-gradient(120deg, transparent 36.5%, red 36.5%),
+      linear-gradient(fuchsia, fuchsia),
+      linear-gradient(240deg, transparent 63%, green 63%),  
+      linear-gradient(210deg, transparent 36.5%, lime 36.5%),
+      linear-gradient(lightgreen, lightgreen),
+      linear-gradient(330deg, transparent 63%, blue 63%),  
+      linear-gradient(300deg, transparent 36.5%, lightblue 36.5%),
+      linear-gradient(cyan, cyan),
+      linear-gradient(60deg, transparent 63%, papayawhip 63%),  
+      linear-gradient(30deg, transparent 36.5%, yellow 36.5%),
+      linear-gradient(gold, gold);
+    background-position: right top, right top, right top, 
+          right bottom, right bottom, right bottom,
+          left bottom, left bottom, left bottom,
+          left top, left top, left top;
+
+    position: relative;
+  }
+  #FillStyle{
+    top: 16.5%;
+    left: 15%
+  }
+  #StrokeStyle{
+    top: 31.5%;
+    left: 15%
+  }
+  #FillStyle , #StrokeStyle{
+    position: relative;
+    width: 60%;
+    /* visibility: hidden; */
+    z-index: 5;
+  }
+  #ColorCircle1{
+      top: 27%;
+  }
+
+  #ColorCircle2{
+    top: 42%;
+}
+
+#Label1{
+    top: 25%;
+}
+#Label2{
+    top: 40%;
+}
+
+#change1 , #change2{
+    background-color: rgba(119, 136, 153, 80%) ;
+    position: relative;
+    width: 60%;
+    height: 30px;
+    font-size: 20px;
+    color: royalblue;
+    z-index: 1;
+}
+#change1{
+    top: 22%;
+    left: 35%
+}
+#change2{
+    top: 37%;
+    left: 35%
+}
+
+#DrawArea , #staticDrawing{
+    position: absolute;
+    top: 250px;
+    left: 500px;
+}
+
+#canvasDrawingArea , #canvasDrawingAreaStatic{
+    position: absolute;
+    top: 0px;
+    left: 0px;
+}

@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="ArtBoard.css">
+    <title>Document</title>
+</head>
+<body>
+    <nav>
+        <button id=FreeLineButton>     
+        <canvas id="canvasFreeLine"  width="100" height="100" ></canvas> 
+        </button>
+        <button id=LineButton> 
+            <canvas id="canvasLine"  width="100" height="100" ></canvas>  
+        </button> 
+        <button id=RectButton> 
+            <canvas id="canvasRect"  width="100" height="100" ></canvas>   
+        </button> 
+        <button id=CircleButton>   
+            <canvas id="canvasCircle"  width="100" height="100" ></canvas>   
+        </button> 
+        <button id=EraseButton> 
+            <canvas id="canvasErase"  width="100" height="100" ></canvas>  
+           </svg>
+        </button>
+    </nav>
+    <div id="Color">
+        <label for="FillStyle" id="Label1">Fill Style</label>
+        <div id="ColorCircle1"></div>
+        <div id="change1">change</div>
+        <input type="color" id="FillStyle" value="change">
+    
+        <label for="StrokeStyle" id="Label2">Stroke Style</label>
+        <div id="ColorCircle2"></div>
+        <div id="change2">change</div>
+        <input type="color" id="StrokeStyle" value="change">
+    </div>
+    </div>
+    <div id="staticDrawing">
+        <canvas id="canvasDrawingAreaStatic"  width="500" height="400" style="border: 1px solid #000000;"></canvas> 
+    </div>
+    <div id="DrawArea">
+        <canvas id="canvasDrawingArea"  width="500" height="400" style="border: 1px solid #000000;"></canvas> 
+    </div>
+    <script src="Artboard.js"></script>
+</body>
+</html>
